@@ -8,11 +8,13 @@
     <!-- tailwind css and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <header class="bg-black">
+    <header class="bg-[#01090d]">
         <div class="max-w-[1140px] mx-auto py-4">
             <div class="navbar bg-base-100 shadow-md rounded-4xl ">
                 <div class="flex-1">
@@ -28,9 +30,43 @@
             </div>
         </div>
         <section>
-        <video src="./media/home-page-video.mp4" autoplay loop class="w-[100%] h-[576px] object-fill"></video>
+            <video src="./media/home-page-video.mp4" autoplay loop playsinline muted
+                class="w-[100%] h-[576px] object-fill"></video>
         </section>
     </header>
+
+    <div class="card-container max-w-[1140px] mx-auto py-8 flex gap-6">
+        <div class="card bg-white w-full text-black inline-block shadow-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+            <div class="card-body items-center text-center">
+                <i class="fa-solid fa-droplet text-3xl text-red-600"></i>
+                <p class="text-[1rem] font-semibold">Blood Doner</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Visit</button>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="card bg-white w-full h-full text-black inline-block shadow-2xl  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+            <div class="card-body items-center text-center">
+                <i class="fa-solid fa-hand-holding-heart text-3xl text-red-600"></i>
+                <p class="text-[1rem] font-semibold">Organ Doner</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Visit</button>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="card bg-white w-full text-black inline-block shadow-2xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+            <div class="card-body items-center text-center">
+                <i class="fa-solid fa-truck-medical text-3xl text-blue-950"></i>
+                <p class="text-[1rem] font-semibold">Ambulace Service</p>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Visit</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
